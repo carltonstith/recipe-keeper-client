@@ -22,6 +22,11 @@ class RecipeService {
         });
     }
 
+    // GET Single Recipe
+    static getRecipe(id) {
+        return axios.get(`${url}${id}`)
+    }
+
     // CREATE Recipe
     static insertRecipe(title, ingredients, directions, servings, prepTime, cookTime, totalTime) {
         return axios.post(url, {
@@ -36,8 +41,16 @@ class RecipeService {
     }
     
     // UPDATE Recipe
-    static updateRecipe() {
-
+    static updateRecipe(title, ingredients, directions, servings, prepTime, cookTime, totalTime) {
+        return axios.put(url, {
+            title,
+            ingredients,
+            directions,
+            servings,
+            prepTime,
+            cookTime,
+            totalTime
+        });
     }
     
     // DELETE Recipe

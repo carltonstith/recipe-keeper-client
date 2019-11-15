@@ -1,4 +1,6 @@
-# client
+# Client folder for Recipe Keeper App
+This MEVN app requires an additional server folder created for the back-end.
+Clone the [server folder]('https://github.com/carltonstith/recipe-keeper.git') + this repo for a full-stack application.
 
 ## Project setup
 ```
